@@ -54,6 +54,17 @@ font-family: 'Poppins', sans-serif;
 }
 
 body{
+    position: relative;
+	font-size:14px;
+	color: #222222;
+	background: #fff;
+	font-family: 'Poppins', sans-serif;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+/* body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,7 +76,7 @@ body{
     margin: 0 auto;
     overflow-x: hidden;
 
-}
+} */
 
 
 
@@ -145,7 +156,7 @@ html,body{
 		2. Header
 --------------------------------------*/
 .top-area {
-    position: unset;
+    position: absolute;
     width: 100%;
 }
 .wrapper {
@@ -523,7 +534,7 @@ html,body{
     border:1px solid #d7d7d7;
     border-bottom: transparent;
     padding: 10px 8px;
-}/*travel-select-icon*/
+}/* travel-select-icon */
 
 .travel-select-icon  select,.travel-check-icon  input {
 	color:#aaa;
@@ -1792,5 +1803,40 @@ html,body{
     color: #fff;
     text-align: center;
   }
-
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.filtr-item img {
+    object-fit: cover;
+    width: 100%;
+}
+.filtr-item  {
+    min-height: 370px;
+    height: 370px;
+    object-fit: cover;
+}
+.fifth-item .filtr-item  {
+    min-height: 320px;
+    height: 320px;
+    object-fit: cover;  
+    width: 100%;
+}
+.fourth-item .filtr-item  {
+    min-height: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+.third-item .filtr-item   {
+    min-height: 630px;
+    height: 630px;
+    object-fit: cover;
+    
+}
+.checkme-details {
+    font-size: 15px;
+    color: #383838;
+    line-height: 18px;
+}
 /*========================Thank you=================*/
