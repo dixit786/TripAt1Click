@@ -758,11 +758,14 @@ html,body{
 }
 /* featured-header  */
 
+/* .container{
+    width: auto;
+} */
 
 /* ---- .item ---- */
 .filtr-container .filtr-item {
     overflow:hidden;
-    float: left;
+    /* float: left; */
     position:relative;
     margin-bottom: 30px;
     overflow:hidden;
@@ -1537,6 +1540,35 @@ html,body{
 .foot-icon-bg-2{
     background: #1da1f3;
 }
+.foot-icon-bg-4{
+    background: #21b80e;
+}
+
+ /* margin-top: 10vh; */
+
+ @media only screen and (max-width:1281px) {
+    .secondImg {
+        margin-top: 10vh !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+    .aboutImg .aboutContent {
+        margin-top: 46vh;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+    .aboutContent {
+        margin-top:23vh;
+        margin-bottom: 15vh;
+    }
+
+    .aboutImg {
+        margin-top:23vh;
+    }
+}
+
 .foot-icon-bg-3{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8938ae+0,c13181+100 */
     background: #8938ae; /* Old browsers */
@@ -1569,7 +1601,7 @@ html,body{
          Scroll Top
 ===============================*/
 
-#scroll-Top  .return-to-top {
+#scrollTop  .return-to-top {
     position: fixed;
     right: 30px;
     bottom: 30px;
@@ -1594,7 +1626,7 @@ html,body{
 
 }
 
-#scroll-Top  .return-to-top:hover {
+#scrollTop  .return-to-top:hover {
     background:#2cdbb5;
     color: #fff;
 	border-radius:50%;

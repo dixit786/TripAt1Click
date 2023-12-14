@@ -3,14 +3,14 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" style="height: 80vh;"    src="/assets/images/home/banner0.jpg" alt="First slide">
+        <img class="d-block w-100" style="height: 80vh;"    src="/assets/images/home/banner3.jpg" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" style="height: 80vh;"   src="/assets/images/home/banner3.jpg" alt="Second slide">
+        <img class="d-block w-100 secondImg" style="height: 80vh;"   src="/assets/images/home/banner5.jpg" alt="Second slide">
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 style="height: 80vh;""   src="/assets/images/home/banner4.jpg" alt="Third slide">
-      </div>
+      {{!-- <div class="carousel-item">
+        <img class="d-block w-100" style="height: 80vh;"   src="/assets/images/home/banner3.jpg" alt="Third slide">
+      </div> --}}
     </div>
     <a class="carousel-control-prev"  href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span style="margin-bottom: 120%; margin-top: 120%;" class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -28,44 +28,47 @@
 
 <section>
 
-  <div class="container">
+  <div class="container" id="form-content">
 
   <div class="row align-items-center" style="margin: 40px 0;">
     <div class="col-md-6">
-      <h4 class="checkme-details">
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-        going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
-        comes
-        from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-        written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The
-        first
-        line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
-      </h4>
+
+      <h2>Welcome to NA</h2>
+
+      <h3 style="margin-top: 3vh;">
+        Explore the Beauty of the Beautiful World 
+      </h3>
+
+      <p style="margin-top: 5vh; font-weight: 600; margin-bottom: 5vh;">
+        About Us
+        At NA, we believe that travel is not just about reaching a destination.
+        it's about the journey and the experiences that shape our memories.
+        With a passion for exploration and a commitment to excellence, we have curated a range of travel services to make your journey unforgettable.
+      </p>
+
     </div>
     <div class="col-md-6">
       <div>
         <form>
           <div class="form-group">
-            <label for="exampleInputPassword1">Name</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="name">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Phone</label>
-            <input type="Number" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="mobile">Mobile No</label>
+            <input type="text" class="form-control" id="mobile" placeholder="phone no">
           </div>  
           <div class="form-group">
-            <label for="exampleInputPassword1">Phone</label>
-            <input type="Number" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="email">E-Mail</label>
+            <input type="email" class="form-control" id="email" placeholder="e-mail">
           </div>  
           <div class="form-group">
-            <label for="exampleInputPassword1">Phone</label>
-            <input type="Number" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="durations">Durations</label>
+            <input type="text" class="form-control" id="durations" placeholder="durations">
           </div>  
           <div class="form-group">
-            <label for="exampleInputPassword1">Phone</label>
-            <input type="Number" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="date">Date</label>
+            <input type="Date" class="form-control" id="date" placeholder="date">
           </div>  
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -78,111 +81,8 @@
 </section>
 
 
-<!--galley start-->
-<section id="gallery" class="gallery">
-  <div class="container">
-    <div class="gallery-details">
-      <div class="gallary-header text-center">
-        <h2>
-          top destination
-        </h2>
-        <p>
-          Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla.
-        </p>
-      </div><!--/.gallery-header-->
-      <div class="gallery-box">
-        <div class="gallery-content">
-          <div class="filtr-container">
-            <div class="row">
-
-              <div class="col-md-6">
-                <div class="filtr-item">
-                  {{!-- <img src="assets/images/gallary/g1.jpg" alt="portfolio image" /> --}}
-                   <img class="d-block w-100"   src="/assets/images/home/banner4.jpg" alt="Third slide">
-                  <div class="item-title">
-                    <a href="#">
-                      china
-                    </a>
-                    <p><span>20 tours</span><span>15 places</span></p>
-                  </div><!-- /.item-title -->
-                </div><!-- /.filtr-item -->
-              </div><!-- /.col -->
-
-              <div class="col-md-6">
-                <div class="filtr-item">
-                   <img class="d-block w-100"   src="/assets/images/home/banner3.jpg" alt="Second slide">
-                  {{!-- <img src="assets/images/gallary/g2.jpg" alt="portfolio image" /> --}}
-                  <div class="item-title">
-                    <a href="#">
-                      venuzuala
-                    </a
-                    <p><span>12 tours</span><span>9 places</span></p>
-                  </div> <!-- /.item-title-->
-                </div><!-- /.filtr-item -->
-              </div><!-- /.col -->
-
-              <div class="col-md-4 third-item">
-                <div class="filtr-item">
-                  <img class="d-block w-100"   src="/assets/images/home/banner3.jpg" alt="Second slide">  
-                  {{!-- <img src="assets/images/gallary/g3.jpg" alt="portfolio image" /> --}}
-                  <div class="item-title">
-                    <a href="#">
-                      brazil
-                    </a>
-                    <p><span>25 tours</span><span>10 places</span></p>
-                  </div><!-- /.item-title -->
-                </div><!-- /.filtr-item -->
-              </div><!-- /.col -->
-
-              <div class="col-md-4 fourth-item">
-                <div class="filtr-item">
-                  <img class="d-block w-100"   src="/assets/images/home/banner3.jpg" alt="Second slide">
-                  {{!-- <img src="assets/images/gallary/g4.jpg" alt="portfolio image" /> --}}
-                  <div class="item-title">
-                    <a href="#">
-                      australia
-                    </a>
-                    <p><span>18 tours</span><span>9 places</span></p>
-                  </div> <!-- /.item-title-->
-                </div><!-- /.filtr-item -->
-              </div><!-- /.col -->
-
-              <div class="col-md-4 fourth-item">
-                <div class="filtr-item">
-                  <img class="d-block w-100"   src="/assets/images/home/banner3.jpg" alt="Second slide">
-                  {{!-- <img src="assets/images/gallary/g5.jpg" alt="portfolio image" /> --}}
-                  <div class="item-title">
-                    <a href="#">
-                      netharland
-                    </a>
-                    <p><span>14 tours</span><span>12 places</span></p>
-                  </div> <!-- /.item-title-->
-                </div><!-- /.filtr-item -->
-              </div><!-- /.col -->
-
-              <div class="col-md-8 fifth-item">
-                <div class="filtr-item">
-                  <img class="d-block w-100"   src="/assets/images/home/banner3.jpg" alt="Second slide">
-                  {{!-- <img src="assets/images/gallary/g6.jpg" alt="portfolio image" /> --}}
-an>14 tours</span><span>6 places</span></p>
-                  </div> <!-- /.item-title-->
-                </div><!-- /.filtr-item -->
-              </div><!-- /.col -->
-
-            </div><!-- /.row -->
-
-          </div><!-- /.filtr-container-->
-        </div><!-- /.gallery-content -->
-      </div><!--/.galley-box-->
-    </div><!--/.gallery-details-->
-  </div><!--/.container-->
-
-</section><!--/.gallery-->
-<!--gallery end-->
-
-
 <!--packages start-->
-<section id="pack" class="packages">
+<section id="pack" class="packages" style="padding-top: 25px;">
   <div class="container">
     <div class="gallary-header text-center">
       <h2>
@@ -218,8 +118,8 @@ an>14 tours</span><span>6 places</span></p>
                     <i class="fa fa-building"></i> Hotel
                   </span>
                   <span>
-                    <img src="/public/assets/fonts/fontawesome-webfont.svg" />
-                    <i class="fa-solid fa-person-skiing-nordic"></i> Sight Seeings
+                    {{!-- <i class="fa fa-person-walking-luggage"></i> --}}
+                    <i class="fa fa-tree"></i> Sight Seeings
                   </span>
                 </p>
               </div><!--/.packages-para-->
@@ -256,8 +156,7 @@ an>14 tours</span><span>6 places</span></p>
                     <i class="fa fa-building"></i> Hotel
                   </span>
                   <span>
-                    <img src="/public/assets/fonts/fontawesome-webfont.svg" />
-                    <i class="fa-solid fa-person-skiing-nordic"></i> Sight Seeings
+                    <i class="fa fa-tree"></i> Sight Seeings
                   </span>
                 </p>
               </div><!--/.packages-para-->
@@ -294,8 +193,7 @@ an>14 tours</span><span>6 places</span></p>
                     <i class="fa fa-building"></i> Hotel
                   </span>
                   <span>
-                    <img src="/public/assets/fonts/fontawesome-webfont.svg" />
-                    <i class="fa-solid fa-person-skiing-nordic"></i> Sight Seeings
+                    <i class="fa fa-tree"></i> Sight Seeings
                   </span>
                 </p>
               </div><!--/.packages-para-->
@@ -332,8 +230,7 @@ an>14 tours</span><span>6 places</span></p>
                     <i class="fa fa-building"></i> Hotel
                   </span>
                   <span>
-                    <img src="/public/assets/fonts/fontawesome-webfont.svg" />
-                    <i class="fa-solid fa-person-skiing-nordic"></i> Sight Seeings
+                    <i class="fa fa-tree"></i> Sight Seeings
                   </span>
                 </p>
               </div><!--/.packages-para-->
@@ -370,8 +267,7 @@ an>14 tours</span><span>6 places</span></p>
                     <i class="fa fa-building"></i> Hotel
                   </span>
                   <span>
-                    <img src="/public/assets/fonts/fontawesome-webfont.svg" />
-                    <i class="fa-solid fa-person-skiing-nordic"></i> Sight Seeings
+                    <i class="fa fa-tree"></i> Sight Seeings
                   </span>
                 </p>
               </div><!--/.packages-para-->
@@ -408,8 +304,7 @@ an>14 tours</span><span>6 places</span></p>
                     <i class="fa fa-building"></i> Hotel
                   </span>
                   <span>
-                    <img src="/public/assets/fonts/fontawesome-webfont.svg" />
-                    <i class="fa-solid fa-person-skiing-nordic"></i> Sight Seeings
+                    <i class="fa fa-tree"></i> Sight Seeings
                   </span>
                 </p>
               </div><!--/.packages-para-->
@@ -429,3 +324,109 @@ an>14 tours</span><span>6 places</span></p>
 
 </section><!--/.packages-->
 <!--packages end-->
+
+
+<!--galley start-->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="gallery-details">
+      <div class="gallary-header text-center">
+        <h2>
+          top destination
+        </h2>
+        <p>
+          Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla.
+        </p>
+      </div><!--/.gallery-header-->
+      <div class="gallery-box">
+        <div class="gallery-content">
+          <div class="filtr-container">
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="filtr-item">
+                  {{!-- <img src="assets/images/gallary/g1.jpg" alt="portfolio image" /> --}}
+                   <img class="d-block w-100"   src="/assets/images/gallary/andman.jpg" alt="Third slide">
+                  <div class="item-title" style="bottom: 28%;">
+                      <a href="#">
+                        Andaman and Nicobar Islands
+                      </a>
+                      <p><span>10 tours</span><span>7 places</span></p>
+                  </div><!-- /.item-title -->
+                </div><!-- /.filtr-item -->
+              </div><!-- /.col -->
+
+              <div class="col-md-6">
+                <div class="filtr-item">
+                   <img class="d-block w-100"   src="/assets/images/gallary/kerala.jpeg" alt="Second slide">
+                  {{!-- <img src="assets/images/gallary/g2.jpg" alt="portfolio image" /> --}}
+                  <div class="item-title">
+                    <a href="#">
+                      Kerala
+                    </a>
+                    <p><span>15 tours</span><span>10 places</span></p>
+                  </div> <!-- /.item-title-->
+                </div><!-- /.filtr-item -->
+              </div><!-- /.col -->
+
+              <div class="col-md-4">
+                <div class="filtr-item">
+                  <img class="d-block w-100"   src="/assets/images/gallary/kasmir.jpg" alt="Second slide">  
+                  {{!-- <img src="assets/images/gallary/g3.jpg" alt="portfolio image" /> --}}
+                  <div class="item-title">
+                    <a href="#">
+                      Kashmir
+                    </a>
+                    <p><span>20 tours</span><span>10 places</span></p>
+                  </div><!-- /.item-title -->
+                </div><!-- /.filtr-item -->
+              </div><!-- /.col -->
+
+              <div class="col-md-4">
+                <div class="filtr-item">
+                  <img class="d-block w-100"   src="/assets/images/gallary/uttrakhand.jpg" alt="Second slide">
+                  {{!-- <img src="assets/images/gallary/g4.jpg" alt="portfolio image" /> --}}
+                  <div class="item-title">
+                    <a href="#">
+                      Uttrakhand 
+                    </a>
+                    <p><span>12 tours</span><span>7 places</span></p>
+                  </div> <!-- /.item-title-->
+                </div><!-- /.filtr-item -->
+              </div><!-- /.col -->
+
+              <div class="col-md-4">
+                <div class="filtr-item">
+                  <img class="d-block w-100"   src="/assets/images/gallary/leh-ladakh.jpg" alt="Second slide">
+                  {{!-- <img src="assets/images/gallary/g5.jpg" alt="portfolio image" /> --}}
+                  <div class="item-title">
+                    <a href="#">
+                      Leh-Ladakh
+                    </a>
+                    <p><span>10 tours</span><span>10 places</span></p>
+                  </div> <!-- /.item-title-->
+                </div><!-- /.filtr-item -->
+              </div><!-- /.col -->
+
+              {{!-- <div class="col-md-8">
+						  	<div class="filtr-item">
+									<img src="/assets/images/home/banner4.jpg" alt="portfolio image"/>
+                  <div class="item-title">
+                    <a href="#">
+                      turkey
+                    </a>
+                    <p><span>14 tours</span><span>6 places</span></p>
+                  </div> <!-- /.item-title-->
+								</div><!-- /.filtr-item -->
+						  </div><!-- /.col --> --}}
+
+            </div><!-- /.row -->
+
+          </div><!-- /.filtr-container-->
+        </div><!-- /.gallery-content -->
+      </div><!--/.galley-box-->
+    </div><!--/.gallery-details-->
+  </div><!--/.container-->
+
+</section><!--/.gallery-->
+<!--gallery end-->

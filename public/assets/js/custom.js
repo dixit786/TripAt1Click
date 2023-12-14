@@ -30,33 +30,47 @@ $(document).ready(function(){
     // 1. Scroll To Top 
 
 		$(window).on('scroll',function () {
+            console.log($(this).scrollTop())
+            $('.return-to-top').show();
+			if ($(this).scrollTop() > 450) {
+                $('.return-to-top').hide();
+            }else{
+                console.log("sdssadsadsadsadassa")
+                $('.return-to-top').show();
+            }
 
-			if ($(this).scrollTop() > 600) {
+			// } else {
 
-				$('.return-to-top').fadeIn();
+				// 
 
-			} else {
-
-				$('.return-to-top').fadeOut();
-
-			}
-
-		});
-
-		$('.return-to-top').on('click',function(){
-
-				$('html, body').animate({
-
-				scrollTop: 0
-
-			}, 1500);
-
-			return false;
+			// }
 
 		});
+
+		// $('.return-to-top').on('click',function(){
+
+		// 		$('html, body').animate({
+
+		// 		scrollTop: 0
+
+		// 	}, 1500);
+
+		// 	return false;
+
+		// });
 
         $('.carousel').carousel({
             interval: 2000
+        })
+
+        $('#scrollTop').click(function(){
+            console.log("sadsdas")
+            $("html, body").animate({ scrollTop: 300  }, 400);
+            return false;
+        });
+
+        $(".packages-btn").click(() => {
+            window.location.href = "https://wa.me/+919103738265"
         })
 
         $('.carousel-indicators li').click(function(e){
