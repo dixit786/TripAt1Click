@@ -2,6 +2,91 @@ $(document).ready(function(){
 
 	"use strict";
 
+    $.validator.addMethod('nameLength', function(value, element) {
+        return this.optional(element) || value.length >= 3;
+    });
+
+    function submitForm() {
+        $("#userForm").on('submit',function() {
+
+            if ($(this).valid()) {
+                $.ajax({
+                  type: "POST",
+                  url: "/inquiry",
+                  data: $("#userForm").serializeArray().reduce(function (json, { name, value }) {
+                        json[name] = value;
+                        return json;
+                      }, {}),
+                  success: function() {
+                    alert("Your inquiry submitted successfully")
+                  },
+                  error: function (error) {
+                    alert("Error while submit your inquiry")
+                  }
+                  });
+            }
+          return false;
+        })
+    };
+
+    submitForm();
+
+    function getFormData(form){
+        var unindexed_array = form.serializeArray();
+        var indexed_array = {};
+    
+        $.map(unindexed_array, function(n, i){
+            indexed_array[n['name']] = n['value'];
+        });
+    
+        return indexed_array;
+    }
+    
+    $('#userForm').validate({
+        rules: {
+        name: {
+            required: true,
+            letterswithbasicpunc: true,
+            nameLength: true
+        },
+        mobile: {
+            required: true,
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        durations: {
+            required: true,
+        }
+        },
+        messages: {
+        name: {
+            required:'<span class="text-danger align-middle"> Enter a name please!'+
+            '</span>',
+            letterswithbasicpunc:'<span class="text-danger align-middle"> The name must contain only letters!'+
+            '</span>',
+            nameLength:'<span class="text-danger align-middle"> The name must be at least 3 chars!'+
+            '</span>'
+        },
+        email: {
+            required: '<span class="text-danger align-middle"> Enter an email please!'+
+            '</span>',
+            email: '<span class="text-danger align-middle"> Enter a valid email please!'+
+            '</span>'
+        },
+        mobile: {
+            required: '<span class="text-danger align-middle"> Enter an mobile no please!'+
+            '</span>'
+        },
+        durations: {
+            required: '<span class="text-danger align-middle"> Enter an durations please!'+
+            '</span>'
+        }
+        }
+
+    });	
+
     
 
         /*==================================
@@ -234,8 +319,6 @@ $(document).ready(function(){
             $(".about-us-txt button").addClass("animated fadeInDown").css({'opacity':'0'});
 
         });
-        
-
-});	
+})
 
 	
