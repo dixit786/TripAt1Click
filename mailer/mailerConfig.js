@@ -59,7 +59,7 @@ async function sendMail(mailData) {
             
                 transporter.sendMail({
                     from: 'noreply@domain.com',
-                    to: 'whatever@otherdomain.com',
+                    to: 'dixitchotaliya05@gmail.com',
                     subject: mailData?.Subject, // Subject line
                     html: mailData?.Content, // html body
                 }).then(info=>{
