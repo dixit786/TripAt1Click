@@ -53,6 +53,11 @@ font-family: 'Poppins', sans-serif;
     }
 }
 
+.logo {
+    margin-top: 4vh;
+    width: 67vh;
+}
+
 body{
     position: relative;
 	font-size:14px;
@@ -228,7 +233,6 @@ html,body{
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     font-weight: 600;
-    margin: 14px 0px 0;
     padding: 10px 0 0 0;
 }
 .logo a span{
@@ -1568,6 +1572,19 @@ html,body{
     }   
 }
 
+@media screen and (max-width: 767px){
+    .logo {
+        margin-top: 0vh !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .logo {
+        margin-top: 2vh !important;
+        font-size: 09px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .contactImg, .carosual-img {
         margin-top: 13vh;
@@ -1575,14 +1592,28 @@ html,body{
     .aboutContent {
         margin-bottom: 20vh;
     }
+
+    .logo {
+        width: 21vh !important;
+        margin-top: 0vh !important;
 }
 
+    .logo a {
+        margin-top: 3vh;
+        font-size: 11px;
+    }
+}
+
+/* I-Pad */
 @media only screen and (min-width: 768px){
     .contactImg, .carosual-img{
         margin-top: 5vh;
     }
     .aboutContent {
         margin-bottom: 5vh;
+    }
+    .logo a {
+        margin-top: -2vh;
     }
 }
 
