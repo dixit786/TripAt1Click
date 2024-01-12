@@ -1569,7 +1569,7 @@ html,body{
     }
     .contactImg, .carosual-img {
         margin-top: 46vh;
-    }   
+    }  
 }
 
 @media screen and (max-width: 767px){
@@ -1671,11 +1671,21 @@ html,body{
     }
 }
 
+.homeIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (min-width: 769px) and (max-height: 1024px) {
 
     .contactImg, .carosual-img{
         margin-top: 13vh;
+    }
+
+    .contactContent {
+        margin-left: 38%;
     }
 }
 
